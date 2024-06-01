@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{font-family: Arial, Helvetica, sans-serif;margin: 0;}
+        .header{
+            padding: 50px;text-align: center;background: #90806070;color: #fff; }
+            h1{font-size: 50px;color: aqua;}p{font-size: 20px;text-transform: capitalize;color: #fff;}
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            padding: 30px;
+            /* text-decoration: none; */
+            /* list-style: none; */
+        }
+        .navbar li a{text-decoration: none;}
+        .header:hover{background: #ff90ef;}.header:hover h1{color: #56ef56;border-radius: 12px;}
+        .navbar:hover{border-radius: 16px;background: #fff;}.navbar:hover li a{color: aqua;}
+        
+    </style>
+
+    <script>
+        var message = "khana khaya"
+        for(khana = 1;khana <=3;khaya++){
+            document.write('<br>');
+            document.write(message + khana + "baar");
+        }
+        document.write('<br>');document.write('<br>');
+
+
+        var message = "I am sorry teacher "
+        for(times = 1;times<=10;times++){
+
+            document.write('<br>')
+            document.write(times + " " + message);
+        }
+        document.write('<br>');document.write('<br>');
+
+        var fruits =['apple','banan','orange'];
+        for(j=0;j<fruits.lenth;j++){
+            document.write('<br>')
+           document.write(fruits[j]);
+        }
+
+
+
+        function searchwebsite(){
+            var websiteName = document.getElementById('search-website').value;
+            Location.replace('https://www'+websiteName+',com');
+
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1>logo</h1>
+        <span>Pakistan cricket teams</spean>
+    </header>
+
+    <nav class="navbar">
+        <li><a href="#">A</a></li>
+        <li><a href="#">B</a></li>
+        <li><a href="#">C</a></li>
+        <li><a href="#">D</a></li>
+    </nav>
+    <form action="">
+        <label for="">search-website</label>
+        <input type="text" id="search-website"placeholder="Enter ur website name"/>
+    </form>
+    <button onclick="searchwebsite()">login</button>
+</body>
+</html>
